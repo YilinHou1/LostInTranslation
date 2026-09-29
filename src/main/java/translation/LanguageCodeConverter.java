@@ -42,7 +42,7 @@ public class LanguageCodeConverter {
             iterator.next(); // skip the first line
             while (iterator.hasNext()) {
                 String line = iterator.next();
-                String[] sections = line.split(" ");
+                String[] sections = line.split("\t");
                 if (sections.length < 2) {
                     throw new Error();
                 }
